@@ -1,16 +1,14 @@
 import Image from "next/image";
-import { Bree_Serif } from "next/font/google";
 
 import profileImage from "@/assets/images/developer-pic-1.png";
 
-const breeSerif = Bree_Serif({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center">
         <div className="flex-1 overflow-hidden">
-          <h2 className={`text-5xl w-96 lg:w-auto text-center lg:text-left ${breeSerif.className} mb-3 animate-reveal`}>
+          <h2 className={`text-5xl w-96 lg:w-auto text-center lg:text-left mb-3 animate-reveal font-bold`}>
             Turning Vision Into Reality With Code
           </h2>
         </div>
@@ -41,9 +39,9 @@ export default function Home() {
                 <g
                   fill="none"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 >
                   <path
                     strokeDasharray="36"

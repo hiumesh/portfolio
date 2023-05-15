@@ -48,7 +48,7 @@ export default function Navbar() {
 
   const basePathURL = pathname.split("/")[1];
   return (
-    <nav className="w-full sm:flex justify-center px-5 py-2 lg:px-0 fixed">
+    <nav className="w-full sm:flex justify-center px-5 py-2 lg:px-0 fixed bg-white z-20">
       <div className="sm:hidden flex justify-between items-center mb-3">
         <button onClick={() => setMenuVisible(!menuVisible)}>
           {menuVisible ? (
