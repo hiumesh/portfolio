@@ -2,7 +2,9 @@
 const nextConfig = {
   images: {
     domains: [
-      'robohash.org'
+      'robohash.org',
+      'example.com',
+      'images.unsplash.com',
     ]
   }
 }

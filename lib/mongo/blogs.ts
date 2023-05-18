@@ -1,11 +1,12 @@
 import { Collection, Db, MongoClient, ObjectId } from "mongodb";
 import clientPromise from ".";
-import { dummyBlogs, dummyTags } from "./dummy-data";
+import { dummyBlogs, dummyProjects, dummyTags } from "./dummy-data";
 
 let client: MongoClient;
 let db: Db;
 let blogs: Collection;
 let tags: Collection;
+let projects: Collection;
 
 async function init() {
   if (db) return;
@@ -13,7 +14,8 @@ async function init() {
     client = await clientPromise;
     db = client.db(process.env.MONGODB_DATABASE_NAME);
     blogs = db.collection('blog');
-    tags = db.collection('tag')
+    tags = db.collection('tag');
+    projects = db.collection('project');
   } catch(err) {
     throw new Error('Failed to stablish connection to database');
   }
@@ -36,10 +38,20 @@ async function insertTagDocuments(){
   }
 }
 
+async function insertProjectDocuments() {
+  try {
+    if (!projects) await init();
+    await projects.insertMany(dummyProjects)
+  } catch(err) {
+    throw new Error('Failed to create Projects')
+  }
+}
+
 ;(async () => {
   await init();
   // await insertBlogDocuments();
   // await insertTagDocuments();
+  // await insertProjectDocuments();
 })();
 
 export async function getBlog(id: string){
@@ -79,5 +91,15 @@ export async function getTags() {
     return { tags: result }
   } catch(err) {
     throw new Error('Failed to fetch Tags');
+  }
+}
+
+export async function getProjects() {
+  try {
+    if (!projects) await init();
+    const result = await projects.find().map((p) => ({ ...p, _id: p._id.toString() })).toArray();
+    return { projects: result }
+  } catch(err) {
+    throw new Error('Failed to fetch projects');
   }
 }

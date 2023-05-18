@@ -1,3 +1,181 @@
+export const dummyProjects = [{
+  "title": "faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat",
+  "technologies_used": [
+    "Django",
+    "Ember.js",
+    "Zend",
+    "Koa.js"
+  ],
+  "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+  "demo_images": [
+    "https://example.com/demo_images/3.gif",
+    "https://example.com/demo_images/4.jpg",
+    "https://example.com/demo_images/3.png"
+  ],
+  "deploy_link": "http://state.tx.us/integer/a/nibh.jsp?convallis=fusce&duis=lacus&consequat=purus&dui=aliquet&nec=at&nisi=feugiat&volutpat=non&eleifend=pretium&donec=quis&ut=lectus&dolor=suspendisse&morbi=potenti&vel=in&lectus=eleifend&in=quam&quam=a&fringilla=odio&rhoncus=in&mauris=hac&enim=habitasse&leo=platea&rhoncus=dictumst&sed=maecenas&vestibulum=ut&sit=massa"
+}, {
+  "title": "justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus",
+  "technologies_used": [
+    "Angular",
+    "CodeIgniter",
+    "Symfony",
+    "Meteor.js",
+    "Laravel",
+    "Ruby on Rails",
+    "Yii"
+  ],
+  "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+  "demo_images": [
+    "https://example.com/demo_images/5.gif",
+    "https://example.com/demo_images/4.gif",
+    "https://example.com/demo_images/3.png"
+  ],
+  "deploy_link": "http://diigo.com/hac/habitasse/platea/dictumst.jpg?vel=ornare&augue=consequat&vestibulum=lectus&ante=in&ipsum=est&primis=risus&in=auctor&faucibus=sed&orci=tristique&luctus=in&et=tempus"
+}, {
+  "title": "magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+  "technologies_used": [
+    "Ember.js",
+    "Flask",
+    "Zend",
+    "Laravel",
+    "CakePHP",
+    "Nest.js",
+    "ASP.NET"
+  ],
+  "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
+  "demo_images": [
+    "https://example.com/demo_images/4.png",
+    "https://example.com/demo_images/3.webp",
+    "https://example.com/demo_images/5.gif"
+  ],
+  "deploy_link": "http://hp.com/vulputate/elementum/nullam/varius/nulla/facilisi.html?nascetur=pellentesque&ridiculus=volutpat&mus=dui&etiam=maecenas&vel=tristique&augue=est&vestibulum=et&rutrum=tempus&rutrum=semper&neque=est&aenean=quam&auctor=pharetra&gravida=magna&sem=ac&praesent=consequat&id=metus&massa=sapien&id=ut&nisl=nunc&venenatis=vestibulum&lacinia=ante&aenean=ipsum&sit=primis&amet=in&justo=faucibus&morbi=orci&ut=luctus&odio=et&cras=ultrices&mi=posuere&pede=cubilia&malesuada=curae&in=mauris&imperdiet=viverra&et=diam&commodo=vitae&vulputate=quam&justo=suspendisse"
+}, {
+  "title": "congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus",
+  "technologies_used": [
+    "Laravel",
+    "Meteor.js",
+    "React",
+    "Vue.js"
+  ],
+  "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
+  "demo_images": [
+    "https://example.com/demo_images/3.jpg",
+    "https://example.com/demo_images/4.gif",
+    "https://example.com/demo_images/5.png",
+    "https://example.com/demo_images/5.gif",
+    "https://example.com/demo_images/3.gif"
+  ],
+  "deploy_link": "http://disqus.com/laoreet/ut/rhoncus/aliquet.xml?ligula=tincidunt&pellentesque=lacus&ultrices=at&phasellus=velit&id=vivamus&sapien=vel&in=nulla&sapien=eget&iaculis=eros&congue=elementum&vivamus=pellentesque&metus=quisque&arcu=porta&adipiscing=volutpat&molestie=erat&hendrerit=quisque&at=erat&vulputate=eros&vitae=viverra&nisl=eget&aenean=congue&lectus=eget&pellentesque=semper&eget=rutrum&nunc=nulla&donec=nunc&quis=purus&orci=phasellus&eget=in&orci=felis&vehicula=donec&condimentum=semper&curabitur=sapien&in=a&libero=libero&ut=nam"
+}, {
+  "title": "dolor quis odio consequat varius integer ac leo pellentesque ultrices",
+  "technologies_used": [
+    "Nest.js",
+    "Meteor.js",
+    "CakePHP",
+    "Django",
+    "Angular",
+    "Ruby on Rails"
+  ],
+  "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+  "demo_images": [
+    "https://example.com/demo_images/3.jpg",
+    "https://example.com/demo_images/5.jpg",
+    "https://example.com/demo_images/4.gif",
+    "https://example.com/demo_images/3.png",
+    "https://example.com/demo_images/4.png"
+  ],
+  "deploy_link": "http://ameblo.jp/velit.jpg?praesent=primis&lectus=in&vestibulum=faucibus&quam=orci&sapien=luctus&varius=et&ut=ultrices&blandit=posuere&non=cubilia&interdum=curae&in=donec&ante=pharetra&vestibulum=magna&ante=vestibulum&ipsum=aliquet&primis=ultrices&in=erat&faucibus=tortor"
+}, {
+  "title": "sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam",
+  "technologies_used": [
+    "CodeIgniter",
+    "Node.js",
+    "React",
+    "Angular"
+  ],
+  "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+  "demo_images": [
+    "https://example.com/demo_images/3.png",
+    "https://example.com/demo_images/3.jpg",
+    "https://example.com/demo_images/5.png",
+    "https://example.com/demo_images/4.jpg"
+  ],
+  "deploy_link": "http://bloglines.com/amet/consectetuer/adipiscing/elit/proin.js?lectus=vestibulum&pellentesque=quam&at=sapien&nulla=varius&suspendisse=ut&potenti=blandit&cras=non&in=interdum&purus=in&eu=ante&magna=vestibulum&vulputate=ante&luctus=ipsum&cum=primis&sociis=in&natoque=faucibus&penatibus=orci&et=luctus&magnis=et&dis=ultrices&parturient=posuere&montes=cubilia&nascetur=curae&ridiculus=duis&mus=faucibus&vivamus=accumsan&vestibulum=odio&sagittis=curabitur&sapien=convallis&cum=duis&sociis=consequat&natoque=dui&penatibus=nec&et=nisi&magnis=volutpat&dis=eleifend&parturient=donec&montes=ut&nascetur=dolor&ridiculus=morbi&mus=vel&etiam=lectus&vel=in&augue=quam&vestibulum=fringilla&rutrum=rhoncus&rutrum=mauris&neque=enim&aenean=leo&auctor=rhoncus&gravida=sed&sem=vestibulum&praesent=sit&id=amet&massa=cursus&id=id&nisl=turpis&venenatis=integer&lacinia=aliquet&aenean=massa&sit=id&amet=lobortis&justo=convallis&morbi=tortor&ut=risus&odio=dapibus&cras=augue&mi=vel&pede=accumsan&malesuada=tellus&in=nisi&imperdiet=eu"
+}, {
+  "title": "vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis",
+  "technologies_used": [
+    "CodeIgniter",
+    "CakePHP",
+    "Express.js",
+    "Node.js",
+    "Vue.js",
+    "Spring Boot",
+    "Ember.js"
+  ],
+  "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+  "demo_images": [
+    "https://example.com/demo_images/5.gif",
+    "https://example.com/demo_images/4.gif",
+    "https://example.com/demo_images/5.png"
+  ],
+  "deploy_link": "http://themeforest.net/in/hac.jpg?proin=auctor&leo=gravida&odio=sem&porttitor=praesent&id=id&consequat=massa&in=id&consequat=nisl&ut=venenatis&nulla=lacinia&sed=aenean&accumsan=sit&felis=amet&ut=justo&at=morbi&dolor=ut&quis=odio&odio=cras&consequat=mi&varius=pede&integer=malesuada&ac=in&leo=imperdiet&pellentesque=et&ultrices=commodo&mattis=vulputate&odio=justo&donec=in"
+}, {
+  "title": "mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
+  "technologies_used": [
+    "CodeIgniter",
+    "Laravel",
+    "Koa.js",
+    "Symfony"
+  ],
+  "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+  "demo_images": [
+    "https://example.com/demo_images/5.png",
+    "https://example.com/demo_images/4.png",
+    "https://example.com/demo_images/3.webp",
+    "https://example.com/demo_images/5.gif",
+    "https://example.com/demo_images/3.gif"
+  ],
+  "deploy_link": "http://tripadvisor.com/non/velit.png?scelerisque=natoque&quam=penatibus&turpis=et&adipiscing=magnis&lorem=dis&vitae=parturient"
+}, {
+  "title": "sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis",
+  "technologies_used": [
+    "Laravel",
+    "React",
+    "Ruby on Rails",
+    "Nest.js",
+    "Express.js",
+    "Vue.js",
+    "Meteor.js",
+    "Node.js"
+  ],
+  "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+  "demo_images": [
+    "https://example.com/demo_images/3.gif",
+    "https://example.com/demo_images/4.png",
+    "https://example.com/demo_images/3.webp",
+    "https://example.com/demo_images/4.jpg",
+    "https://example.com/demo_images/5.png"
+  ],
+  "deploy_link": "https://hp.com/ante/vestibulum/ante/ipsum/primis/in.html?nisl=cras&venenatis=pellentesque&lacinia=volutpat&aenean=dui&sit=maecenas&amet=tristique&justo=est&morbi=et&ut=tempus&odio=semper&cras=est&mi=quam&pede=pharetra&malesuada=magna&in=ac&imperdiet=consequat&et=metus&commodo=sapien&vulputate=ut&justo=nunc&in=vestibulum&blandit=ante&ultrices=ipsum&enim=primis&lorem=in"
+}, {
+  "title": "sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim",
+  "technologies_used": [
+    "Laravel",
+    "React",
+    "Ruby on Rails",
+    "Express.js",
+    "Django",
+    "Flask",
+    "Zend"
+  ],
+  "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+  "demo_images": [
+    "https://example.com/demo_images/5.jpg",
+    "https://example.com/demo_images/3.gif",
+    "https://example.com/demo_images/4.gif"
+  ],
+  "deploy_link": "https://house.gov/neque/duis/bibendum/morbi/non/quam.html?lacus=sed&morbi=sagittis&sem=nam&mauris=congue&laoreet=risus&ut=semper&rhoncus=porta&aliquet=volutpat&pulvinar=quam&sed=pede&nisl=lobortis&nunc=ligula&rhoncus=sit&dui=amet&vel=eleifend&sem=pede&sed=libero&sagittis=quis&nam=orci&congue=nullam&risus=molestie&semper=nibh&porta=in&volutpat=lectus&quam=pellentesque&pede=at&lobortis=nulla&ligula=suspendisse&sit=potenti&amet=cras&eleifend=in&pede=purus&libero=eu&quis=magna&orci=vulputate&nullam=luctus&molestie=cum&nibh=sociis&in=natoque&lectus=penatibus&pellentesque=et&at=magnis&nulla=dis&suspendisse=parturient&potenti=montes&cras=nascetur&in=ridiculus&purus=mus&eu=vivamus&magna=vestibulum&vulputate=sagittis&luctus=sapien"
+}];
 export const dummyTags = [{
   "tag_name": "angular",
   "tag_color": "#4f58b3"
