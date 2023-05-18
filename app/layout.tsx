@@ -1,4 +1,5 @@
 import './globals.css'
+import './github-markdown.css'
 import { roboto } from './fonts'
 
 import Navbar from '@/components/navbar'

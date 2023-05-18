@@ -1,10 +1,8 @@
 "use client";
 
-import { Inter } from "next/font/google";
 import { useRef } from "react";
 import { motion, useScroll, useInView } from "framer-motion";
 
-const inter = Inter({ subsets: ["latin"], weight: ["700"] });
 
 import AnimateText from "@/components/animate-text";
 
@@ -19,7 +17,7 @@ const experiences = [
   },
   {
     position: "Software Engineer",
-    company: "Google",
+    company: "Amazon",
     duration: "2022-2023",
     address: "Mountain View, CA",
     description:
@@ -27,7 +25,7 @@ const experiences = [
   },
   {
     position: "Software Engineer",
-    company: "Google",
+    company: "Youtube",
     duration: "2022-2023",
     address: "Mountain View, CA",
     description:
@@ -35,7 +33,7 @@ const experiences = [
   },
   {
     position: "Software Engineer",
-    company: "Google",
+    company: "Facebook",
     duration: "2022-2023",
     address: "Mountain View, CA",
     description:
@@ -55,7 +53,7 @@ export default function SectionThree() {
     <section className="max-w-6xl m-auto my-10 flex flex-col justify-center items-center">
       <h1
         ref={headingRef}
-        className={`text-center w-full mx-auto text-6xl ${inter.className} font-bold my-7 mb-12 text-pink-800`}
+        className={`text-center w-full mx-auto text-6xl font-bold my-7 mb-12 text-pink-800`}
       >
         <AnimateText
           animation="rise-up"

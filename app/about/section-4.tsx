@@ -1,16 +1,13 @@
 "use client";
 
-import { Inter } from "next/font/google";
 import { useRef } from "react";
 import { motion, useScroll, useInView } from "framer-motion";
-
-const inter = Inter({ subsets: ["latin"], weight: ["700"] });
 
 import AnimateText from "@/components/animate-text";
 
 const educations = [
   {
-    degree: "Software Engineer",
+    degree: "B.TECH",
     institute: "Google",
     duration: "2022-2023",
     address: "Mountain View, CA",
@@ -19,7 +16,7 @@ const educations = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque dolore tempore illo, voluptatibus hic voluptas, nulla itaque sit qui ut vel autem ipsa minus doloribus similique alias enim dolorum",
   },
   {
-    degree: "Software Engineer",
+    degree: "Intermedite",
     institute: "Google",
     duration: "2022-2023",
     address: "Mountain View, CA",
@@ -28,25 +25,7 @@ const educations = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque dolore tempore illo, voluptatibus hic voluptas, nulla itaque sit qui ut vel autem ipsa minus doloribus similique alias enim dolorum",
   },
   {
-    degree: "Software Engineer",
-    institute: "Google",
-    duration: "2022-2023",
-    address: "Mountain View, CA",
-    score: "",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque dolore tempore illo, voluptatibus hic voluptas, nulla itaque sit qui ut vel autem ipsa minus doloribus similique alias enim dolorum",
-  },
-  {
-    degree: "Software Engineer",
-    institute: "Google",
-    duration: "2022-2023",
-    address: "Mountain View, CA",
-    score: "",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque dolore tempore illo, voluptatibus hic voluptas, nulla itaque sit qui ut vel autem ipsa minus doloribus similique alias enim dolorum",
-  },
-  {
-    degree: "Software Engineer",
+    degree: "High School",
     institute: "Google",
     duration: "2022-2023",
     address: "Mountain View, CA",
@@ -68,7 +47,7 @@ export default function SectionFour() {
     <section className="max-w-6xl m-auto my-10 flex flex-col justify-center items-center">
       <h1
         ref={headingRef}
-        className={`text-center w-full mx-auto text-6xl ${inter.className} font-bold my-7 mb-12 text-pink-800`}
+        className={`text-center w-full mx-auto text-6xl font-bold my-7 mb-12 text-pink-800`}
       >
         <AnimateText
           animation="rise-up"

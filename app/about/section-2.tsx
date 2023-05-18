@@ -19,6 +19,15 @@ import nextjsIcon from "../../assets/images/svgs/nextjs-icon.svg";
 import flutterIcon from "../../assets/images/svgs/flutter.svg";
 import awsDynamoDbIcon from "../../assets/images/svgs/aws-dynamodb.svg";
 import awsSQSIcon from "../../assets/images/svgs/aws-sqs.svg";
+import electronIcon from '../../assets/images/svgs/electron.svg';
+import angularIcon from '../../assets/images/svgs/angular-icon.svg';
+import vueIcon from '../../assets/images/svgs/vue.svg';
+import postgresql from '../../assets/images/svgs/postgresql.svg';
+import dartIcon from '../../assets/images/svgs/dart.svg';
+import terraformIcon from '../../assets/images/svgs/terraform-icon.svg';
+import apiGatewayIcon from '../../assets/images/svgs/aws-api-gateway.svg';
+import awsLambdaIcon from '../../assets/images/svgs/aws-lambda.svg';
+import awsVPCIcon from '../../assets/images/svgs/aws-vpc.svg';
 
 import AnimateText from "@/components/animate-text";
 
@@ -68,42 +77,6 @@ const skills = [
     icon: reactIcon,
   },
   {
-    label: "Bash",
-    icon: bashIcon,
-  },
-  {
-    label: "Tailwind",
-    icon: tailwindIcon,
-  },
-  {
-    label: "CircleCI",
-    icon: circleCIIcon,
-  },
-  {
-    label: "CircleCI",
-    icon: circleCIIcon,
-  },
-  {
-    label: "React",
-    icon: reactIcon,
-  },
-  {
-    label: "Next.js",
-    icon: nextjsIcon,
-  },
-  {
-    label: "Flutter",
-    icon: flutterIcon,
-  },
-  {
-    label: "Dynamo DB",
-    icon: awsDynamoDbIcon,
-  },
-  {
-    label: "React",
-    icon: reactIcon,
-  },
-  {
     label: "Next.js",
     icon: nextjsIcon,
   },
@@ -118,6 +91,42 @@ const skills = [
   {
     label: "SQS",
     icon: awsSQSIcon,
+  },
+  {
+    label: "Electron.js",
+    icon: electronIcon,
+  },
+  {
+    label: "Angular",
+    icon: angularIcon,
+  },
+  {
+    label: "Vue",
+    icon: vueIcon,
+  },
+  {
+    label: "Postgresql",
+    icon: postgresql,
+  },
+  {
+    label: "Dart",
+    icon: dartIcon,
+  },
+  {
+    label: "Terraform",
+    icon: terraformIcon,
+  },
+  {
+    label: "API Gateway",
+    icon: apiGatewayIcon,
+  },
+  {
+    label: "Lambda",
+    icon: awsLambdaIcon,
+  },
+  {
+    label: "VPC",
+    icon: awsVPCIcon,
   },
 ];
 
@@ -153,9 +162,10 @@ function getCircleCoordinates(n: number, radius: number) {
 export default function SectionTwo() {
   const headingRef = useRef(null);
   const headingInView = useInView(headingRef, { amount: "all" });
-  const [isScreenLarge, setIsScreenLarge] = useState(window.innerWidth >= 1024);
+  const [isScreenLarge, setIsScreenLarge] = useState(true);
 
   useEffect(() => {
+    setIsScreenLarge(window.innerWidth >= 1024);
     window.addEventListener("resize", () => setIsScreenLarge(window.innerWidth >= 1024));
   }, []);
 
@@ -191,7 +201,7 @@ export default function SectionTwo() {
             return (
               <li
                 key={s.label}
-                className="m-5 p-2 bg-white flex flex-col justify-center items-center"
+                className="m-5 p-2 bg-white inline-flex flex-col justify-center items-center"
               >
                 <motion.span
                   whileHover={{
