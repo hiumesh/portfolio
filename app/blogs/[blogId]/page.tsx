@@ -3,9 +3,10 @@ import Image from "next/image";
 import MarkdownPreview from "./markdownPreview";
 import UserBlogList from "./userblogList";
 import { Blog, getBlogs } from "../page";
+import { domain } from "@/app/config";
 
 async function getBlogData(blogId: string) {
-  const res = await fetch(`http://localhost:3000/api/blogs/${blogId}`, {
+  const res = await fetch(`${domain}/api/blogs/${blogId}`, {
     next: { revalidate: 60000 },
   });
   if (!res.ok) {

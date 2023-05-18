@@ -1,0 +1,1 @@
+export const domain = process.env.VERCEL ? 'https://' + process.env.VERCEL_URL : "http://localhost:3000"

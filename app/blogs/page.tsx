@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import BlogCard from "./blogCard";
 import TagBlogList from "./tagBlogList";
+import { domain } from "../config";
 
 export interface Blog {
   _id: string;
@@ -27,7 +28,7 @@ export async function getBlogs(
   limit?: number | undefined,
   offset?: number | undefined
 ) {
-  let baseUrl = "http://localhost:3000/api/blogs?";
+  let baseUrl =  domain+"/api/blogs?";
   if (tag && typeof tag === "string") {
     baseUrl = baseUrl.concat(`tag=${tag}&`);
   }
@@ -53,7 +54,7 @@ export async function getBlogs(
 }
 
 async function getTags() {
-  const res = await fetch("http://localhost:3000/api/tags", {
+  const res = await fetch(domain+"/api/tags", {
     next: { revalidate: 600 },
   });
 
