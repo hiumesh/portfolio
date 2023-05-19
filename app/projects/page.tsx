@@ -13,7 +13,7 @@ export interface Project {
 
 async function getProjects() {
   const res = await fetch(domain+"/api/projects", {
-    next: { revalidate: 600 },
+    cache: 'no-store',
   });
 
   if (!res.ok) {
@@ -26,7 +26,7 @@ async function getProjects() {
 }
 
 export default async function Projects() {
-  const projects = await getProjects();
+  const projects = await getProjects();;
 
   return (
     <main className="min-h-screen pt-20 px-4 max-w-6xl mx-auto">
